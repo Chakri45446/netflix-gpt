@@ -15,3 +15,23 @@ If you are developing a production application, we recommend using TypeScript wi
 
 - created netflix-gpt app using vite
 - configured Tailwindcss
+
+
+
+
+# Features 
+
+- Login / Sign Up Page
+    - Sign In / Sign Up Form
+    - redirect to Browse Page
+
+- Browse (after authentication)
+    - Header
+    - Trailer in Background
+    - Title & Description
+    - Movie suggestions
+         - MovieList * N 
+
+- Netflix-GPT Page 
+    - Search Page
+    - Movie Suggestions         
