@@ -15,6 +15,8 @@ If you are developing a production application, we recommend using TypeScript wi
 
 - created netflix-gpt app using vite
 - configured Tailwindcss
+- Header
+- Login Form - both Sign In && Sign Up
 
 
 
