@@ -16,7 +16,17 @@ If you are developing a production application, we recommend using TypeScript wi
 - created netflix-gpt app using vite
 - configured Tailwindcss
 - Header
+- Routing
 - Login Form - both Sign In && Sign Up
+- Form Validation
+- useRef Hook
+- Firebase Setup
+- Deploying our App to Production
+- Create SignUp User Account
+- Implemented Sign In user api
+- created our Redux Store where userSlice
+- Implemented Sign Out Feature
+- Update Profile
 
 
 
