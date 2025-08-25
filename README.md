@@ -27,23 +27,36 @@ If you are developing a production application, we recommend using TypeScript wi
 - created our Redux Store where userSlice
 - Implemented Sign Out Feature
 - Update Profile
+- Bug Fix : Sign Up user dispalyName , Profile picture Update.
+- Bug Fix : if the user is not logged in redirect / browse to Login Page and vice-versa.
+- unsubscribe to the onAuthStateChanged callback
+- Added hardcoded values to contants
+- Registered for TMDB API & create an app & get access token
+- Get data from TMDB now now playing movie list page
+- Custom hook for now playing movies
+- Create movieSlice
+- update the store with movies Data
+- Planing for Main Container and Secondary Container
+- Fetch Data for Trailer Video
+- Update store with Trailer Video Data
+- Embedded the Youtube Video and make it autoplay and mute
+- Tailwind classes to make Main Container look awesome
 
-
-
-
-# Features 
+# Features
 
 - Login / Sign Up Page
-    - Sign In / Sign Up Form
-    - redirect to Browse Page
+
+  - Sign In / Sign Up Form
+  - redirect to Browse Page
 
 - Browse (after authentication)
-    - Header
-    - Trailer in Background
-    - Title & Description
-    - Movie suggestions
-         - MovieList * N 
 
-- Netflix-GPT Page 
-    - Search Page
-    - Movie Suggestions         
+  - Header
+  - Trailer in Background
+  - Title & Description
+  - Movie suggestions
+    - MovieList \* N
+
+- Netflix-GPT Page
+  - Search Page
+  - Movie Suggestions

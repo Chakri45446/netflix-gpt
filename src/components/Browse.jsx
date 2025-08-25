@@ -1,19 +1,31 @@
-import React from 'react'
-import Header from './Header'
+import useNowPlayingMovies from "../customHooks/useNowPlayingMovies";
+import Header from "./Header";
+import MainContainer from "./MainContainer";
+import SecondaryContainer from "./SecondaryConatainer";
 
 const Browse = () => {
+  useNowPlayingMovies();
+
   return (
-    <div className='flex '>
+    <div className="flex ">
       <div>
         <Header />
-      </div>
-      <div>
-        <p className='my-35 p-2'>browse</p>
-      </div>
-      
-      
-      </div>
-  )
-}
+        <MainContainer />
+        <SecondaryContainer />
+        {/* 
 
-export default Browse
+              - Main Container
+                  - Video In BackGround
+                  - Video Title
+
+              - Secondary Container
+                  - MoviesList * n
+                  - cards {movieCards} * n    
+        
+        */}
+      </div>
+    </div>
+  );
+};
+
+export default Browse;

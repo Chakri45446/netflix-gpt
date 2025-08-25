@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "netflixgpt-69de4"
-  }
+    "default": "myfirstprojectnet",
+    "dev": "myfirstprojectnet"
+  },
+  "targets": {},
+  "etags": {}
 }
