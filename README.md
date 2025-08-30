@@ -42,6 +42,14 @@ If you are developing a production application, we recommend using TypeScript wi
 - Embedded the Youtube Video and make it autoplay and mute
 - Tailwind classes to make Main Container look awesome
 - Build Secondary Component
+- Build MovieList
+- Build MovieCard
+- TMDB Image CDN URL
+- Made the Browse page amazing with Tailwind CSS
+- Created Custom Hooks
+- GPT Search Page
+- GPT Search Bar
+- (BONUS) Multi-Language Feature in our App
 
 # Features
 

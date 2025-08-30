@@ -28,7 +28,7 @@ isSupported().then((yes) => {
     analytics = getAnalytics(app);
     // console.log("Analytics enabled ✅");
   } else {
-    console.log("Analytics not supported in this environment ⚠️");
+    //console.log("Analytics not supported in this environment ⚠️");
   }
 });
 

@@ -8,7 +8,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { useDispatch } from "react-redux";
-import { NETFLIX_BG, USER_AVATAR } from "./utils/Contants";
+import { NETFLIX_BG_URL, USER_AVATAR } from "./utils/Contants";
 import { auth } from "./utils/Firebase";
 import { addUser } from "./utils/userSlice";
 
@@ -96,7 +96,7 @@ const Login = () => {
           <Header />
         </div>
         <div className="absolute">
-          <img src={NETFLIX_BG} alt="background-img" />
+          <img src={NETFLIX_BG_URL} alt="background-img" />
         </div>
         <form
           onSubmit={(e) => e.preventDefault()}
