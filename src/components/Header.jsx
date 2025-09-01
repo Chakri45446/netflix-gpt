@@ -59,32 +59,36 @@ const Header = () => {
     dispatch(changedLanguage(e.target.value));
   };
   return (
-    <div className="absolute z-10 w-full px-25 bg-gradient-to-r from-black flex justify-between  ">
+    <div className="absolute z-10 md:w-full px-10 gap-8 md:px-25 bg-gradient-to-b from-black flex justify-between flex-col md:flex-row  ">
       <div>
-        <img className="  w-50  p-2 m-2  " src={NETFLIX_LOGO_URL} alt="logo" />
+        <img
+          className="md:my-10 my-6 m-2 py-2 w-30 md:mx-0 mx-auto md:w-40  md:p-2 md:m-2  "
+          src={NETFLIX_LOGO_URL}
+          alt="logo"
+        />
       </div>
       {user && (
-        <div className=" p-2 ml-9 my-7 flex">
+        <div className=" p-2 md:ml-9 ml-16  md:my-7 -my-14 flex  ">
           <button
-            className="p-2 m-2 bg-cyan-700 my-2 px-4 rounded-lg cursor-pointer text-white"
+            className="p-2 m-2 bg-cyan-700 my-2 px-4 md:h-13  w-30 rounded-lg cursor-pointer text-white"
             onClick={handleGptSearch}
           >
             {showGptSearch ? "Homepage" : "GPT Search"}
           </button>
           <img
             alt="fav-logo"
-            className="w-15 h-14 p-2 rounded-lg "
+            className="hidden md:block w-15 h-14 p-2 rounded-lg "
             src={user.photoURL}
           />
           <button
-            className="bg-black rounded-lg border-border-black text-white w-20 h-10 p-2 m-2    cursor-pointer"
+            className="bg-black rounded-lg border-border-black text-white w-20 h-10 p-2 m-2 cursor-pointer"
             onClick={handleSignOut}
           >
             Sign Out
           </button>
           {showGptSearch && (
             <select
-              className="bg-gray-900 text-white rounded-lg  p-2 m-2"
+              className="bg-gray-900 text-white rounded-lg  p-2 m-2 md:h-10 cursor-pointer"
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGUAGE.map((lang) => (

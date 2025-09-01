@@ -6,11 +6,17 @@ import { NETFLIX_BG_URL } from "./utils/Contants";
 const GptSearch = () => {
   return (
     <div>
-      <div className="absolute -z-10">
-        <img src={NETFLIX_BG_URL} alt="background-img" />
+      <div className="fixed inset-0 -z-10">
+        <img
+          src={NETFLIX_BG_URL}
+          alt="background-img"
+          className="w-full h-full object-cover"
+        />
       </div>
-      <GptSearchBar />
-      <GptSearchSuggestions />
+      <div>
+        <GptSearchBar />
+        <GptSearchSuggestions />
+      </div>
     </div>
   );
 };

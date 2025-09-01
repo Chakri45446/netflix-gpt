@@ -1,4 +1,4 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { API_OPTIONS } from "../components/utils/Contants";
 import { addNowPlayingMovies } from "../components/utils/movieSlice";
 import { useEffect } from "react";
@@ -6,6 +6,9 @@ import { useEffect } from "react";
 const useNowPlayingMovies = () => {
   // fetching the data from TMDB Api and update store
   const dispatch = useDispatch();
+  const nowPlayingMovies = useSelector(
+    (store) => store.moviesList.nowPlayingMovies
+  );
 
   const getNowPlayingMovies = async () => {
     const data = await fetch(
@@ -18,7 +21,8 @@ const useNowPlayingMovies = () => {
   };
 
   useEffect(() => {
-    getNowPlayingMovies();
+    //memoization means if data already fetched it unable to fetch data again and again like this..,
+    if (!nowPlayingMovies) getNowPlayingMovies();
   }, []);
 };
 export default useNowPlayingMovies;

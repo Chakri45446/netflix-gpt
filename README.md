@@ -50,6 +50,15 @@ If you are developing a production application, we recommend using TypeScript wi
 - GPT Search Page
 - GPT Search Bar
 - (BONUS) Multi-Language Feature in our App
+- Get Gemini AI API key
+- GPT Search API call
+- Fetched gptMovieSuggestions from TMDB
+- Created gptSlice added data
+- Reused MovieList component to make movie suggestions container
+- Memoization
+- Added .env file
+- Added .env file to gitignore
+- Made out Site Responsive
 
 # Features
 
